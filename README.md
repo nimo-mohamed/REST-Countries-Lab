@@ -18,13 +18,15 @@ You will be building a **country bucket list**, combining the classic To-Do List
 - Create a means to mark a country as "visited"
 - Additionally display a list of "visited countries"
 
-Before you jump into the code, let's think about the architecture of your frontend, and where things should be put. Firstly, let's take a look at one (possible) way to implement it. Here is a breakdown of the proposed layout:
+Before you jump into the code, let's think about the architecture of your frontend, and where things should be put. Firstly, let's take a look at one (possible) way to implement it. Here is a breakdown of the proposed layout:![data-breakdown](https://github.com/nimo-mohamed/REST-Countries-Lab/assets/138133949/42a8b8b1-7381-4de3-bed7-c211bbeb8e96)
 
-<img src="layout-breakdown.jpeg" alt="Layout breakdown" height="500" />
 
-By breaking down this layout, we can conclude that our data flow should look something like this:
 
-<img src="data-breakdown.jpeg" alt="Layout breakdown" height="500" />
+
+By breaking down this layout, we can conclude that our data flow should look something like this:![layout-breakdown](https://github.com/nimo-mohamed/REST-Countries-Lab/assets/138133949/9efe4f9f-0ae2-4faa-a119-46065f754c0d)
+
+
+
 
 Our `App.js` will be the component that fetches countries from the API, and it will be stored within the State. We can loop through the countries within app and _pass each country as a prop_ to the `Country.js` component.
 
